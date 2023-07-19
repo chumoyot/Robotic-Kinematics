@@ -10,4 +10,4 @@ Simpler cases like the one showcased here can be solved in MATLAB by making the 
 
 Linkages where there is only one chain connecting the ground and the end effector are known as serial mechanisms. Parallel mechanisms have multiple chains connecting the ground and the end effector. Solving for parallel mechanisms is a lot harder.
 
-For the parallel mechanisms problem, we used the minitaur robot's leg as an example with the motor angles represented as theta1 and theta2. The goal ws to use forward kinematics to solve for X and Y cordinates t
+For the parallel mechanisms problem, we used the minitaur robot's leg as an example with the motor angles represented as theta1 and theta2. The goal ws to use forward kinematics to solve for the X and Y coordinates of the end effector. Here is the image of the robot. 
