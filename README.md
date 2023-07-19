@@ -23,3 +23,7 @@ This Jacobian transposition inverse is a representation of the system's actual m
 Here is the MATLAB output of the parallel mechanism minotaur's leg.
 
 ![minotaur's leg](https://github.com/chumoyot/Robotic-Kinematics/assets/135506318/2bd77ff6-320f-4c5f-baf7-62990830ccca)
+
+For the serial mechanisms, here is the plot of a revolute-revolute joint where inverse kinematics was done to find the joint angles. The slider is used to give the X and Y inputs of the end effector.
+
+![Screenshot 2023-07-19 222207](https://github.com/chumoyot/Robotic-Kinematics/assets/135506318/598a8936-7712-4635-ac7a-8f07294a74de)
