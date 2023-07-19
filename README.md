@@ -10,4 +10,16 @@ Simpler cases like the one showcased here can be solved in MATLAB by making the 
 
 Linkages where there is only one chain connecting the ground and the end effector are known as serial mechanisms. Parallel mechanisms have multiple chains connecting the ground and the end effector. Solving for parallel mechanisms is a lot harder.
 
-For the parallel mechanisms problem, we used the minitaur robot's leg as an example with the motor angles represented as theta1 and theta2. The goal ws to use forward kinematics to solve for the X and Y coordinates of the end effector. Here is the image of the robot. 
+For the parallel mechanisms problem, we used the minitaur robot's leg as an example with the motor angles represented as theta1 and theta2. The goal was to use forward kinematics to solve for the X and Y coordinates of the end effector. Here is the image of the robot courtesy of ODriverobotics.com
+
+![odrive](https://github.com/chumoyot/Robotic-Kinematics/assets/135506318/1cf8d8cd-9118-4455-81ce-230c12ff73da)
+
+This task is greatly simplified if coordinate changes are used. The first coordinate change that will be helpful is to go from theta1 and theta2 to alpha and beta, the mean and different coordinates. Once alpha and beta are computed, a further coordinate change to polar coordinates helps solve the problem. 
+
+The link between joint velocities and end effector velocities is described by Jacobian, J, computed where the rows represent the system of equations and the columns indicate the partial derivatives of the various joint angles. The Jacobian transpose can be used to connect the forces at the end effector to the torques at the joints because of the concept of virtual work.
+
+This Jacobian transposition inverse is a representation of the system's actual mechanical advantage. It converts joint torques into forces at the end effector on a scale.
+
+Here is the MATLAB output of the parallel mechanism minotaur's leg.
+
+![minotaur's leg](https://github.com/chumoyot/Robotic-Kinematics/assets/135506318/2bd77ff6-320f-4c5f-baf7-62990830ccca)
